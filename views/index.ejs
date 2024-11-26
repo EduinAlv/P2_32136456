@@ -167,14 +167,18 @@
           <div class="text">
             <h2 class="title">Contáctanos</h2>
             <p>Si tienes preguntas o deseas agendar una cita, ¡estamos aquí para ti!</p>
-            <a href="https://api.whatsapp.com/send?phone=584243317845&text=Hola!%20Quisiera%20agendar%20una%20cita." class="button" target="_blank"><i class="icon-whatsapp"></i>Escríbenos por WhatsApp</a>
+            <!-- <a href="https://api.whatsapp.com/send?phone=584243317845&text=Hola!%20Quisiera%20agendar%20una%20cita." class="button" target="_blank"><i class="icon-whatsapp"></i>Escríbenos por WhatsApp</a>-->
           </div>
           <div class="links">
-            <ul class="grid">
-              <li><i class="icon-phone"></i>+58 424 3117 845</li>
-              <li><i class="icon-map-pin"></i>San Juan de los Morros, Edo Guarico</li>
-              <li><i class="icon-mail"></i>eduinguevara72@gmail.com</li>
-            </ul>
+            <form action="/save" method="POST">
+              <label for="correo">Correo</label>
+              <input type="email" name="email" required>
+              <label for="nombre">Nombre</label>
+              <input type="text" name="name" required>
+              <label for="comentario">Comentario</label>
+              <textarea id="comentario" name="commentary" rows="10" cols="50" required></textarea>
+              <button>Enviar</button>
+            </form>
           </div>
         </div>
       </section>

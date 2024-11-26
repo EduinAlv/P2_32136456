@@ -455,6 +455,42 @@ nav.show div.icon-close {
   color: var(--base-color);
 }
 
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#contact form input,
+#contact form textarea {
+  padding: .8rem;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  resize: none;
+}
+
+#contact form textarea {
+  color: black;
+}
+
+
+
+#contact form button {
+  padding: .8rem;
+  border: 0;
+  outline: 0;
+  background: var(--base-color);
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: .3rem;
+  cursor: pointer;
+}
+
+
+
 footer {
   background: var(--base-color);
 }
@@ -538,6 +574,10 @@ footer .social a:hover {
 .list-service li::marker {
   color: #0092ca;
 }
+
+
+
+
 
 
 
