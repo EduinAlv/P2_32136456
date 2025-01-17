@@ -10,10 +10,10 @@ class ContactosModel {
     });
   }
   connect() {
-    this.db.run('CREATE TABLE IF NOT EXISTS contactos(correo VARCHAR(255), nombre VARCHAR(255), comentario TEXT,ip TEXT,fecha TEXT)');
+    this.db.run('CREATE TABLE IF NOT EXISTS contactos(correo VARCHAR(255), nombre VARCHAR(255), comentario TEXT,ip TEXT, pais TEXT, fecha TEXT)');
   }
-  save(correo, nombre, comentario, ip, fecha, pais) {
-    this.db.run("INSERT INTO contactos VALUES (?, ?, ?, ?, ?)", [correo, nombre, comentario, ip, fecha]);
+  save(correo, nombre, comentario, ip, pais, fecha,) {
+    this.db.run("INSERT INTO contactos VALUES (?, ?, ?, ?, ?, ?)", [correo, nombre, comentario, ip, pais, fecha]);
   }
 }
 
