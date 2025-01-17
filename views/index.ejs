@@ -1,207 +1,267 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Estilo Gálactico</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-    <link rel="stylesheet" href="/assets/fonts/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"/>
-  </head>
-  <body>
-    <header id="header">
-      <nav class="container">
-        <a class="logo" href="#">Estilo <span>Galáctico</span>.</a>
-        <!-- Menú -->
-        <div class="menu">
-          <ul class="grid">
-            <li><a class="title" href="#home">Inicio</a></li>
-            <li><a class="title" href="#about">Sobre nosotros</a></li>
-            <li><a class="title" href="#services">Servicios</a></li>
-            <li><a class="title" href="#testimonials">Testimonios</a></li>
-            <li><a class="title" href="#contact">Contacto</a></li>
-          </ul>
-        </div>
-        <!-- Toggle del menú -->
-        <div class="toggle icon-menu"></div>
-        <div class="toggle icon-close"></div>
-      </nav>
-    </header>
-    <main>
-      <!-- Sección de inicio -->
-      <section class="section" id="home">
-        <div class="container grid">
-          <div class="image">
-            <img src="https://joseppons.com/formacion/wp-content/uploads/2021/09/peluqueria-en-television-1.jpg" alt="Peluquero atendiendo a un cliente."
-            />
-          </div>
-          <div class="text">
-            <h1 class="title">Peluquería</h1>
-            <h2 class="title" style="font-size: 2rem;">Estilo Galactico</h2>
-            <p>
-              Descubre lo mejor en cuidado capilar con profesionales de primer nivel.
-            </p>
-            <a class="button" href="#">Agendar una cita</a>
-          </div>
-        </div>
-      </section>
-      <div class="divider-1"></div>
-      <!-- Sobre nosotros -->
-      <section class="section" id="about">
-        <div class="container grid">
-          <div class="image">
-            <img src="https://media.istockphoto.com/id/815579108/es/foto/retrato-de-mujer-estilista-mirando-a-c%C3%A1mara.jpg?s=612x612&w=0&k=20&c=Y7iWjWQUUZqiAvOpUJc6yeaWQC7-FDhwSDsr1S6vW7g=" alt="Quienes somos"/>
-          </div>
-          <div class="text">
-            <h2 class="title">Sobre nosotros</h2>
-            <p>En <strong>Estilo Galactico</strong>, somos un equipo comprometido con el bienestar y la satisfacción de nuestros clientes. Ofrecemos un ambiente relajante y tratamientos de belleza personalizados con productos de alta calidad.</p>
-            <p>Con más de 10 años de experiencia, nuestro salón es reconocido por la excelencia en cortes, coloración y tratamientos capilares.</p>
-          </div>
-        </div>
-      </section>
-      <div class="divider-2"></div>
-      <!-- Servicios -->
-<section class="section" id="services">
-  <div class="container grid">
-    <header>
-      <h2 class="title">Nuestros servicios</h2>
-      <p class="subtitle">Explora nuestros servicios exclusivos y diseñados para realzar tu belleza natural.</p>
-    </header>
-    <div class="cards grid">
-      <div class="card">
-        <i class="icon-woman-hair"></i>
-        <h3 class="title">Corte de cabello</h3>
-        <div class="description-service">
-        <p>Ofrecemos cortes modernos y clásicos, adaptados a tu estilo y personalidad. Nuestros expertos garantizan un corte preciso y de alta calidad.</p>
-        <p><strong>Ventajas</strong></p>
-        <ul class="list-service">
-          <li>Asesoría personalizada según la forma de tu rostro.</li>
-          <li>Uso de herramientas y técnicas de vanguardia.</li>
-          <li>Cortes que permiten un fácil mantenimiento.</li>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estilo Gálactico</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <link rel="stylesheet" href="/assets/fonts/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700
+    &family=Poppins:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <!-- Google tag (gtag.js) -->
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KBCQPSN0S2"></script>
+
+  <!--Recaptcha.-->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-KBCQPSN0S2');
+  </script>
+</head>
+
+<body>
+  <header id="header">
+    <nav class="container">
+      <a class="logo" href="#">Estilo <span>Galáctico</span>.</a>
+      <!-- Menú -->
+      <div class="menu">
+        <ul class="grid">
+          <li><a class="title" href="#home">Inicio</a></li>
+          <li><a class="title" href="#about">Sobre nosotros</a></li>
+          <li><a class="title" href="#services">Servicios</a></li>
+          <li><a class="title" href="#testimonials">Testimonios</a></li>
+          <li><a class="title" href="#ubicacion">Ubicación</a></li>
+          <li><a class="title" href="#contact">Contacto</a></li>
         </ul>
       </div>
+      <!-- Toggle del menú -->
+      <div class="toggle icon-menu"></div>
+      <div class="toggle icon-close"></div>
+    </nav>
+  </header>
+  <main>
+    <!-- Sección de inicio -->
+    <section class="section" id="home">
+      <div class="container grid">
+        <div class="image">
+          <img src="https://joseppons.com/formacion/wp-content/uploads/2021/09/peluqueria-en-television-1.jpg"
+            alt="Peluquero atendiendo a un cliente." />
+        </div>
+        <div class="text">
+          <h1 class="title">Peluquería</h1>
+          <h2 class="title" style="font-size: 2rem;">Estilo Galactico</h2>
+          <p>
+            Descubre lo mejor en cuidado capilar con profesionales de primer nivel.
+          </p>
+          <a class="button" href="#">Agendar una cita</a>
+        </div>
       </div>
-      <div class="card">
-        <i class="icon-trim"></i>
-        <h3 class="title">Tratamientos capilares</h3>
-        <div class="description-service">
-        <p>Utilizamos productos naturales y veganos para revitalizar el cabello dañado, devolviéndole su brillo y fuerza. Ideal para cualquier tipo de cabello.</p>
-        <p><strong>Ventajas</strong></p>
-        <ul class="list-service">
-          <li>Sin químicos agresivos, adecuado para cuero cabelludo sensible.</li>
-          <li>Resultados duraderos y visibles desde la primera aplicación.</li>
-          <li>Hidratación profunda que previene la caída y rotura del cabello.</li>
-        </ul>
+    </section>
+    <div class="divider-1"></div>
+    <!-- Sobre nosotros -->
+    <section class="section" id="about">
+      <div class="container grid">
+        <div class="image">
+          <img
+            src="https://media.istockphoto.com/id/815579108/es/foto/retrato-de-mujer-estilista-mirando-a-c%C3%A1mara.jpg?s=612x612&w=0&k=20&c=Y7iWjWQUUZqiAvOpUJc6yeaWQC7-FDhwSDsr1S6vW7g="
+            alt="Quienes somos" />
+        </div>
+        <div class="text">
+          <h2 class="title">Sobre nosotros</h2>
+          <p>En <strong>Estilo Galactico</strong>, somos un equipo comprometido con el bienestar y la satisfacción de
+            nuestros clientes. Ofrecemos un ambiente relajante y tratamientos de belleza personalizados con productos de
+            alta calidad.</p>
+          <p>Con más de 10 años de experiencia, nuestro salón es reconocido por la excelencia en cortes, coloración y
+            tratamientos capilares.</p>
+        </div>
       </div>
+    </section>
+    <div class="divider-2"></div>
+    <!-- Servicios -->
+    <section class="section" id="services">
+      <div class="container grid">
+        <header>
+          <h2 class="title">Nuestros servicios</h2>
+          <p class="subtitle">Explora nuestros servicios exclusivos y diseñados para realzar tu belleza natural.</p>
+        </header>
+        <div class="cards grid">
+          <div class="card">
+            <i class="icon-woman-hair"></i>
+            <h3 class="title">Corte de cabello</h3>
+            <div class="description-service">
+              <p>Ofrecemos cortes modernos y clásicos, adaptados a tu estilo y personalidad. Nuestros expertos
+                garantizan un corte preciso y de alta calidad.</p>
+              <p><strong>Ventajas</strong></p>
+              <ul class="list-service">
+                <li>Asesoría personalizada según la forma de tu rostro.</li>
+                <li>Uso de herramientas y técnicas de vanguardia.</li>
+                <li>Cortes que permiten un fácil mantenimiento.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <i class="icon-trim"></i>
+            <h3 class="title">Tratamientos capilares</h3>
+            <div class="description-service">
+              <p>Utilizamos productos naturales y veganos para revitalizar el cabello dañado, devolviéndole su brillo y
+                fuerza. Ideal para cualquier tipo de cabello.</p>
+              <p><strong>Ventajas</strong></p>
+              <ul class="list-service">
+                <li>Sin químicos agresivos, adecuado para cuero cabelludo sensible.</li>
+                <li>Resultados duraderos y visibles desde la primera aplicación.</li>
+                <li>Hidratación profunda que previene la caída y rotura del cabello.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <i class="icon-cosmetic"></i>
+            <h3 class="title">Coloración</h3>
+            <div class="description-service">
+              <p>Especialistas en técnicas como balayage, reflejos y tintes, garantizando resultados vibrantes y
+                duraderos. Utilizamos productos de alta calidad que cuidan la salud del cabello.</p>
+              <p><strong>Ventajas</strong></p>
+              <ul class="list-service">
+                <li>Colores personalizados según el tono de piel y estilo.</li>
+                <li>Productos sin amoníaco que protegen la fibra capilar.</li>
+                <li>Duración prolongada sin decoloración rápida.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <i class="icon-cosmetic"></i>
-        <h3 class="title">Coloración</h3>
-        <div class="description-service">
-        <p>Especialistas en técnicas como balayage, reflejos y tintes, garantizando resultados vibrantes y duraderos. Utilizamos productos de alta calidad que cuidan la salud del cabello.</p>
-        <p><strong>Ventajas</strong></p>
-        <ul class="list-service">
-          <li>Colores personalizados según el tono de piel y estilo.</li>
-          <li>Productos sin amoníaco que protegen la fibra capilar.</li>
-          <li>Duración prolongada sin decoloración rápida.</li>
-        </ul>
+    </section>
+    <div class="divider-1"></div>
+    <!-- Testimonios -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <header>
+          <h2 class="title">Lo que dicen nuestros clientes</h2>
+        </header>
+        <div class="testimonials swiper">
+          <div class="swiper-wrapper">
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>¡Mi cabello nunca ha estado tan saludable! Gracias a Estilo Galáctico, ahora
+                  confío plenamente en sus tratamientos. ¡Recomiendo mucho!
+                </p>
+                <cite>
+                  <img src="https://randomuser.me/api/portraits/women/4.jpg" alt="Cliente Feliz">
+                  Albany Salazar
+                </cite>
+              </blockquote>
+            </div>
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>El mejor salón al que he ido. El personal es súper profesional y siempre salgo
+                  encantada con mi nuevo look.
+                </p>
+                <cite>
+                  <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Cliente Feliz">
+                  Luisa Cheverria
+                </cite>
+              </blockquote>
+            </div>
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>Hace años que soy cliente aquí y siempre quedo satisfecha, nunca dejaré este
+                  servicio ¡El mejor lugar para cuidarte!<br>
+                </p>
+                <cite>
+                  <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Cliente Feliz">
+                  Sofia Delgado
+                </cite>
+              </blockquote>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    <div class="divider-2"></div>
+    <!--Ubicación-->
+    <section class="section" id="ubicacion">
+      <div class="container grid">
+        <div class="text" style="display: flex; justify-content: center; justify-content: center; flex-direction: column; align-items: center;">
+          <h2 class="title">Nuestra ubicación</h2>
+          <div class="ubicacion">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.816275482442!2d-67.48362382495776!3d10.032014872482964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e801b7ed443bcc5%3A0xd3b7679524d544da!2sOmegasoft%20C.A!5e0!3m2!1ses-419!2sus!4v1737150944622!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
       </div>
+    </section>
+    <!-- Contacto -->
+    <section class="section" id="contact" style="background-color: white;">
+      <div class="container grid">
+        <div class="text">
+          <h2 class="title">Contáctanos</h2>
+          <p>Si tienes preguntas o deseas agendar una cita, ¡estamos aquí para ti!</p>
+        </div>
+        <div class="links">
+          <form action="/save" method="POST" id="myForm">
+            <label for="correo">Correo</label>
+            <input type="email" name="email" placeholder="Escribe el correo.." required>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="name" placeholder="Escribe el nombre.."required>
+            <label for="comentario">Comentario</label>
+            <textarea id="comentario" name="commentary" rows="10" placeholder="Escribe el comentario.."  cols="50" required></textarea>
+            <div class="flex" style="display: flex; justify-content: center; padding: .4rem;">
+              <div class="g-recaptcha" data-sitekey="<%= key %>"></div> 
+            </div>
+            <button>Enviar</button>
+            
+          </form>
+        </div>
+      </div>
+    </section>
+    <div class="divider-1"></div>
+  </main>
+  <!-- Footer -->
+  <footer class="section">
+    <div class="container grid">
+      <div class="brand">
+        <a class="logo logo-alt" href="#home">Estilo<span>Galáctico</span>.</a>
+        <p>©2024 Peluquería Estilo Galáctico.</p>
+        <p>Todos los derechos reservados.</p>
+      </div>
+      <div class="social">
+        <a href="https://instagram.com" target="_blank"><i class="icon-instagram"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="icon-facebook"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="icon-youtube"></i></a>
       </div>
     </div>
-  </div>
-</section>
-      <div class="divider-1"></div>
-      <!-- Testimonios -->
-      <section class="section" id="testimonials">
-        <div class="container">
-          <header>
-            <h2 class="title">Lo que dicen nuestros clientes</h2>
-          </header>
-          <div class="testimonials swiper">
-            <div class="swiper-wrapper">
-              <div class="testimonial swiper-slide">
-                <blockquote>
-                  <p>
-                    <span>&ldquo;</span>¡Mi cabello nunca ha estado tan saludable! Gracias a Estilo Galáctico, ahora confío plenamente en sus tratamientos. ¡Recomiendo mucho!
-                  </p>
-                  <cite>
-                    <img src="https://randomuser.me/api/portraits/women/4.jpg" alt="Cliente Feliz">
-                    Albany Salazar
-                  </cite>
-                </blockquote>
-              </div>
-              <div class="testimonial swiper-slide">
-                <blockquote>
-                  <p>
-                    <span>&ldquo;</span>El mejor salón al que he ido. El personal es súper profesional y siempre salgo encantada con mi nuevo look.
-                  </p>
-                  <cite>
-                    <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Cliente Feliz">
-                    Luisa Cheverria
-                  </cite>
-                </blockquote>
-              </div>
-              <div class="testimonial swiper-slide">
-                <blockquote>
-                  <p>
-                    <span>&ldquo;</span>Hace años que soy cliente aquí y siempre quedo satisfecha, nunca dejaré este servicio ¡El mejor lugar para cuidarte!<br>
-                  </p>
-                  <cite>
-                    <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Cliente Feliz">
-                    Sofia Delgado
-                  </cite>
-                </blockquote>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-      </section>
-      <div class="divider-2"></div>
-      <!-- Contacto -->
-      <section class="section" id="contact">
-        <div class="container grid">
-          <div class="text">
-            <h2 class="title">Contáctanos</h2>
-            <p>Si tienes preguntas o deseas agendar una cita, ¡estamos aquí para ti!</p>
-            <!-- <a href="https://api.whatsapp.com/send?phone=584243317845&text=Hola!%20Quisiera%20agendar%20una%20cita." class="button" target="_blank"><i class="icon-whatsapp"></i>Escríbenos por WhatsApp</a>-->
-          </div>
-          <div class="links">
-            <form action="/save" method="POST">
-              <label for="correo">Correo</label>
-              <input type="email" name="email" required>
-              <label for="nombre">Nombre</label>
-              <input type="text" name="name" required>
-              <label for="comentario">Comentario</label>
-              <textarea id="comentario" name="commentary" rows="10" cols="50" required></textarea>
-              <button>Enviar</button>
-            </form>
-          </div>
-        </div>
-      </section>
-      <div class="divider-1"></div>
-    </main>
-    <!-- Footer -->
-  <footer class="section">
-      <div class="container grid">
-        <div class="brand">
-          <a class="logo logo-alt" href="#home">Estilo<span>Galáctico</span>.</a>
-          <p>©2024 Peluquería Estilo Galáctico.</p>
-          <p>Todos los derechos reservados.</p>
-        </div>
-        <div class="social">
-          <a href="https://instagram.com" target="_blank"><i class="icon-instagram"></i></a>
-          <a href="https://facebook.com" target="_blank"><i class="icon-facebook"></i></a>
-          <a href="https://youtube.com" target="_blank"><i class="icon-youtube"></i></a>
-        </div>
-      </div>
-    </footer>
-    <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="/javascripts/main.js"></script>  
-  </body>
+  </footer>
+  <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="/javascripts/main.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <% if(alert) { %>
+      <script>
+      Swal.fire({
+        title: '<%= alertTitle %>',
+        text:'<%= alertMessage %>',
+        icon:'<%= alertIcon %>',
+        showConfirmButton: <%= showConfirmButton %>,
+      }).then(()=>{
+        window.location = '/<%= ruta %>'
+      })
+    </script>
+  <% } %>
+</body>
+
 </html>
