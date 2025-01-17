@@ -1,4 +1,4 @@
-# Implementación de Funcionalidades
+# ✅Implementación de Funcionalidades
 
 A continuación se describen las funcionalidades que se han implementado en este proyecto, que incluyen la verificación de Google reCAPTCHA, la obtención de información geográfica basada en la dirección IP, el envío de correos electrónicos utilizando **Nodemailer** y la integración con **Google Analytics**.
 
