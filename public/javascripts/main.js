@@ -81,6 +81,12 @@ function activateMenuAtCurrentSection() {
 
   }
 }
+
+
+
+
+
+
 window.addEventListener('scroll', () => {
   changeHeaderWhenScroll()
   backToTopWhenScroll()

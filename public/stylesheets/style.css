@@ -460,16 +460,22 @@ nav.show div.icon-close {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  background-color: rgb(255, 255, 255);
+  padding: 1.5rem;
+  border-radius: 5px;
 }
 
 #contact form input,
 #contact form textarea {
   padding: .8rem;
-  border: 0;
+  border: .7px solid var(--base-color-alt);
   outline: 0;
   border-radius: 5px;
   resize: none;
 }
+
+
+
 
 #contact form textarea {
   color: black;
@@ -488,6 +494,9 @@ nav.show div.icon-close {
   margin-top: .3rem;
   cursor: pointer;
 }
+
+
+
 
 
 
@@ -747,5 +756,6 @@ footer .social a:hover {
     margin-left: auto;
     margin-right: auto;
   }
+
 }
 
